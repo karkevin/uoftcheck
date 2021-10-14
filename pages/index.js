@@ -11,7 +11,7 @@ import {
   Heading,
   UnorderedList,
   ListItem,
-  Divider,
+  Button,
 } from "@chakra-ui/react";
 
 export default function Home() {
@@ -28,6 +28,7 @@ export default function Home() {
         maxW="container.md"
         bgColor="white"
         padding="5"
+        pb="40"
         borderRadius="10"
       >
         <Image src="/uoft.png" w="32" p="4" />
@@ -37,6 +38,7 @@ export default function Home() {
           color="white"
           borderRadius="5"
           padding="5"
+          pb="1"
         >
           <Stack spacing="-1">
             <Stack direction="row" justify="space-between">
@@ -90,18 +92,30 @@ export default function Home() {
               </ListItem>
             </UnorderedList>
             <br />
-            <Divider size="xl" color="white" />
             <Stack
               direction="row"
               justify="space-between"
               align="center"
-              px="4"
+              py="2"
+              px="1"
+              borderTop="1px solid rgba(255,255,255)"
             >
-              <Heading fontSize="lg">Recomendation</Heading>
-              <ChevronDownIcon w={5} h={5} />
+              <Heading fontSize="xl">Recomendation</Heading>
+              <ChevronDownIcon w={6} h={6} />
             </Stack>
           </Stack>
         </Container>
+        <Stack
+          align="center"
+          border="2px solid #c4c4c4"
+          borderRadius="8"
+          p="3"
+          mt="4"
+        >
+          <Heading fontSize="md" color="gray.700">
+            New Self-Assessment
+          </Heading>
+        </Stack>
       </Container>
     </Box>
   );
