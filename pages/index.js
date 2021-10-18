@@ -37,7 +37,7 @@ export default function Home() {
           <RadioGroup onChange={setName} defaultValue="Ming Yang Xu">
             <Stack spacing="8">
               <Radio value="Ming Yang Xu">Kev</Radio>
-              <Radio value="Emily Wen">Emily</Radio>
+              <Radio value="Emily Ran Wen">Emily</Radio>
             </Stack>
           </RadioGroup>
           <Button onClick={(_) => setConfirm(!confirm)}>Confirm</Button>
